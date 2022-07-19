@@ -1,0 +1,6 @@
+<!--pages/home-profile/index.wxml-->
+<button open-type="getUserInfo" bindtap="handleGetUser" wx:if="{{!userInfo.userInfo}}">获取用户信息</button>
+<view class="img">
+  <image src="{{userInfo.userInfo.avatarUrl}}" mode="widthFix" style="width: 300px;"></image>
+</view>
+<view>{{nickname}}</view>

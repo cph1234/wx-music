@@ -1,0 +1,6 @@
+/* pages/home-profile/index.wxss */
+.img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

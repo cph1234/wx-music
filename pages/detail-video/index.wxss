@@ -1,0 +1,40 @@
+/* pages/detail-video/index.wxss */
+page {
+  padding-top: 225px;
+}
+
+.video {
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.content {
+  padding: 20rpx;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.artist {
+  font-size: 20rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+}
+
+.describe {
+  font-size: 20rpx;
+  color: #999999;
+}
+
+.recommend-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  padding: 30rpx 0;
+}
+
+.item {
+  margin-top: 15px;
+}

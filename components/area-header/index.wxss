@@ -1,0 +1,28 @@
+/* components/area-header/index.wxss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+}
+
+.header .title {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+/* 当slot内为空，显示default */
+.slot:empty+.default {
+  display: flex;
+}
+
+.header .default {
+  display: none;
+  align-items: center;
+  font-size: 28rpx;
+  color: #777777;
+}
+
+.header .default .icon {
+  width: 50rpx;
+  height: 50rpx;
+}
