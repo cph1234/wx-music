@@ -3,4 +3,7 @@
 <view class="img">
   <image src="{{userInfo.userInfo.avatarUrl}}" mode="widthFix" style="width: 300px;"></image>
 </view>
+<view>
+  <image src="{{qrCreate.data.qrimg}}" mode="widthFix" style="width: 300px;"></image>
+</view>
 <view>{{nickname}}</view>

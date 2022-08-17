@@ -70,7 +70,11 @@ Page({
     this.navigateToDetailSongsPage("hotRanking")
   },
   handleRankingItemClick: function (event) {
-    const rankingMap = { 0: "newRanking", 2: "originRanking", 3: "upRanking" }
+      //飙升榜：19723756
+      //新歌榜：3779629
+      //原创榜：2884035
+      //热歌榜：3778678
+    const rankingMap = { 3779629: "newRanking", 2884035: "originRanking", 19723756: "upRanking" }
     const idx = event.currentTarget.dataset.idx
     const rankingName = rankingMap[idx]
     this.navigateToDetailSongsPage(rankingName)

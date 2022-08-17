@@ -1,3 +1,4 @@
 import { rankingStore } from './ranking-store'
 import { playerStore } from './player-store'
-export { rankingStore, playerStore }
+import { loginStore } from './login-store'
+export { rankingStore, playerStore, loginStore }

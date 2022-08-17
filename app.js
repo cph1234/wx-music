@@ -7,7 +7,7 @@ App({
     this.globalData.screenHeight = info.screenHeight
     this.globalData.statusBarHeight = info.statusBarHeight
     this.handleLogin()
-    
+
   },
   handleLogin: async function () {
     //登录(验证token，token是否过期，session是否过期)

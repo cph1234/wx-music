@@ -1,3 +1,4 @@
+import phRequest from "./index"
 import { phLoginRequest } from "./index"
 export function getLoginCode() {
   return new Promise((resolve, reject) => {
@@ -48,5 +49,25 @@ export function getUserInfo() {
         reject(err)
       }
     })
+  })
+}
+
+export function getQrKey() {
+  return phRequest.post(`/login/qr/key?timerstamp=${Date.now()}`, {
+    withCredentials: true, //关键
+  })
+}
+
+export function getQrCreate(key) {
+  return phRequest.post(`/login/qr/create?qrimg=true&timerstamp=${Date.now()}`, {
+    withCredentials: true, //关键
+    key
+  })
+}
+
+export function getQrCheck(key) {
+  return phRequest.post(`/login/qr/check?timerstamp=${Date.now()}`, {
+    withCredentials: true, //关键
+    key
   })
 }

@@ -5,11 +5,13 @@ export function getSearchHot() {
 export function getSearchSuggest(keywords) {
   return phRequest.get("/search/suggest", {
     keywords,
-    type: "mobile"
+    type: "mobile",
+    cookie: wx.getStorage("cookie")
   })
 }
 export function getSearchResult(keywords) {
   return phRequest.get("/search", {
-    keywords
+    keywords,
+    cookie: wx.getStorage("cookie")
   })
 }
