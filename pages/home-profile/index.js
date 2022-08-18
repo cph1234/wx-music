@@ -4,7 +4,8 @@ import { loginStore } from '../../store/index'
 Page({
   data: {
     userInfo: {},
-    qrCreate: ""
+    qrCreate: "",
+    cookie: ""
   },
   onLoad(options) {
     loginStore.dispatch("getQrCreateAction")
@@ -12,6 +13,9 @@ Page({
       console.log(qrCreate)
       this.setData({ qrCreate })
     })
+    if (wx.getStorage('cookie')) {
+      this.setData({ cookie: wx.getStorage('cookie') })
+    }
   },
   handleGetUser: async function () {
     // 用户信息

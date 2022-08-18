@@ -1,6 +1,21 @@
 /* pages/home-profile/index.wxss */
-.img{
+.img {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.qr {
+  width: 100%;
+  display: flex;
+}
+
+.qr image {
+  justify-content: center;
+}
+
+.qr .success {
+  display: block;
+  margin: auto;
+  font-weight: 700;
 }

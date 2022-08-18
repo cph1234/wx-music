@@ -15,13 +15,13 @@ export function getLoginCode() {
   })
 }
 
-export function codeToToken(code) {
-  return phLoginRequest.post("/login", { code })
-}
+// export function codeToToken(code) {
+//   return phLoginRequest.post("/login", { code })
+// }
 
-export function checkToken() {
-  return phLoginRequest.post("/auth", {}, true)
-}
+// export function checkToken() {
+//   return phLoginRequest.post("/auth", {}, true)
+// }
 export function postFavorRequest(id) {
   return phLoginRequest.post("/api/favor", { id }, true)
 }

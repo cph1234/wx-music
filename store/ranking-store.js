@@ -8,7 +8,6 @@ export const rankingStore = new HYEventStore({
     upRanking: {}
   },
   actions: {
-    //0：新歌榜 1：热歌榜 2：原创榜 3：飙升榜
     //飙升榜：19723756
     //新歌榜：3779629
     //原创榜：2884035

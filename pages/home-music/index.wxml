@@ -25,7 +25,7 @@
 <view class="ranking">
   <area-header title="巅峰榜" showRight="{{false}}"></area-header>
   <view class="ranking-list">
-    <block wx:for="{{rankings}}" wx:key="index">
+    <block wx:for="{{rankings}}" wx:key="playCount">
       <ranking-area-item item="{{item}}" bindtap="handleRankingItemClick" data-idx="{{index}}"></ranking-area-item>
     </block>
   </view>

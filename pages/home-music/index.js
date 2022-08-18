@@ -41,7 +41,7 @@ Page({
         this.setData({ durationTime })
       }
       this.setData({ currentTime })
-      this.setData({ playPercent: this.data.currentTime / this.data.durationTime *100+ '%' })
+      this.setData({ playPercent: this.data.currentTime / this.data.durationTime * 100 + '%' })
     })
   },
   getPageData() {
@@ -70,12 +70,19 @@ Page({
     this.navigateToDetailSongsPage("hotRanking")
   },
   handleRankingItemClick: function (event) {
-      //飙升榜：19723756
-      //新歌榜：3779629
-      //原创榜：2884035
-      //热歌榜：3778678
+    //飙升榜：19723756
+    //新歌榜：3779629
+    //原创榜：2884035
+    //热歌榜：3778678
     const rankingMap = { 3779629: "newRanking", 2884035: "originRanking", 19723756: "upRanking" }
-    const idx = event.currentTarget.dataset.idx
+    let idx = event.currentTarget.dataset.idx
+    if (idx === 0) {
+      idx = 3779629
+    } else if (idx === 1) {
+      idx = 2884035
+    } else {
+      idx = 19723756
+    }
     const rankingName = rankingMap[idx]
     this.navigateToDetailSongsPage(rankingName)
   },
